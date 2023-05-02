@@ -87,11 +87,11 @@
 /* ------------------------------------------------------------------- 
  * ## fonts 
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Heebo:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 
 :root {
-    --font-1    : "Inter", sans-serif;
-    --font-2    : "Heebo", sans-serif;
+    --font-1    : "Poppins", sans-serif;
+    --font-2    : "Poppins", sans-serif;
 
     /* monospace
      */
@@ -106,15 +106,15 @@
     /* color-1(#3F885C)
      * color-2(#BA2D0B)
      */
-    --color-1                       : hsla(144, 37%, 39%, 1);
-    --color-2                       : hsla(12, 89%, 39%, 1);
+    --color-1                       : #005855;
+    --color-2                       : #3E4BFF;
 
     /* theme color variations
      */
     --color-1-lightest              : hsla(144, 37%, 79%, 1);
     --color-1-lighter               : hsla(144, 37%, 69%, 1);
-    --color-1-light                 : hsla(144, 37%, 49%, 1);
-    --color-1-dark                  : hsla(144, 37%, 29%, 1);
+    --color-1-light                 : #9EECC8;
+    --color-1-dark                  : #9EECC8;
     --color-1-darker                : hsla(144, 37%, 19%, 1);
     --color-1-darkest               : hsla(144, 37%, 9%, 1);
 
@@ -507,7 +507,6 @@ template {
 }
 
 
-
 /* ===================================================================
  * # BASE SETUP
  *
@@ -594,6 +593,9 @@ textarea {
     appearance         : none;
 }
 
+.highlighted {
+    background-color: #9EECC8;
+}
 
 
 /* ===================================================================
@@ -1857,6 +1859,11 @@ img,
     margin-bottom : var(--vspace-1);
 }
 
+.svgicons {
+    margin-bottom: 0;
+    filter: invert(26%) sepia(44%) saturate(2146%) hue-rotate(230deg) brightness(83%) contrast(99%);
+}
+
 
 
 /* =================================================================== 
@@ -2912,7 +2919,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-header {
     --header-height  : 64px;
-    --logo-width     : 90px;
+    --logo-width     : 60px;
     z-index          : 100;
     background-color : transparent;
     height           : var(--header-height);
@@ -2933,7 +2940,7 @@ img.u-pull-left {
 
 .s-header.sticky {
     --header-height  : 80px;
-    --logo-width     : 82px;
+    --logo-width     : 52px;
     opacity          : 0;
     visibility       : hidden;
     background-color : var(--color-gray-19);
@@ -3126,6 +3133,10 @@ img.u-pull-left {
     transform : rotate(-45deg);
 }
 
+.github_link {
+    color: white;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * site-header
@@ -3160,7 +3171,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
     .s-header {
-        --logo-width : 80px;
+        --logo-width : 50px;
         top          : var(--vspace-0_5);
     }
 
@@ -3292,7 +3303,7 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/hero-bg-3000.jpg);
+    background-image    : url(../images/bg-top.png);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3371,7 +3382,7 @@ img.u-pull-left {
 }
 
 .s-intro__content-title {
-    --text-title-size : 8.8rem;
+    --text-title-size : 7rem;
     --text-multiplier : 1;
     font-weight       : 500;
     font-size         : calc(var(--text-title-size) * var(--text-multiplier));
@@ -3676,6 +3687,7 @@ img.u-pull-left {
     border-radius    : var(--border-radius);
     padding          : var(--vspace-1_5) var(--vspace-1_75) var(--vspace-0_75) var(--vspace-1_75);
     text-align       : center;
+    justify-content: center;
     box-shadow       : 0 34px 20px -40px rgba(0, 0, 0, 0.1);
 }
 
@@ -4070,7 +4082,7 @@ img.u-pull-left {
 }
 
 .s-testimonials__header {
-    margin-bottom : var(--vspace-1_5);
+    margin-bottom : var(--vspace-2);
 }
 
 .s-testimonials__header h3 {
@@ -4082,7 +4094,7 @@ img.u-pull-left {
 }
 
 .s-testimonials .swiper-container {
-    padding-bottom : var(--vspace-1_5);
+    padding-bottom : var(--vspace-5);
 }
 
 /* ------------------------------------------------------------------- 
@@ -4385,8 +4397,8 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-footer {
     background-color : var(--color-gray-19);
-    padding-top      : calc(5.5 * var(--space));
-    padding-bottom   : var(--vspace-3_5);
+    padding-top      : calc(2.5 * var(--space));
+    padding-bottom   : var(--vspace-0_5);
     margin-top       : auto;
     font-weight      : 300;
     color            : rgba(255, 255, 255, 0.4);
