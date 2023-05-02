@@ -1,6 +1,6 @@
 # Tadashi Landing Page
 
 INFO 491 Section A (Nam-Ho)
-Kevin Yip, Collin Santos, Leon Kan, Nicole Fendi
+Ian Wang, Jason Nguyen, Youjin Jung, Mark Zhang Anna Kim
 
-Link to landing page: https://speedguy00.github.io/tadashi-landing/
+Link to landing page: https://team-chimu.github.io/chimu-landing/
