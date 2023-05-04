@@ -1861,7 +1861,8 @@ img,
 
 .svgicons {
     margin-bottom: 0;
-    filter: invert(26%) sepia(44%) saturate(2146%) hue-rotate(230deg) brightness(83%) contrast(99%);
+    /* filter: invert(26%) sepia(44%) saturate(2146%) hue-rotate(230deg) brightness(83%) contrast(99%); */
+    filter: invert(19%) sepia(61%) saturate(2237%) hue-rotate(155deg) brightness(98%) contrast(104%);
 }
 
 
