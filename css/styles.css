@@ -4123,6 +4123,15 @@ img.u-pull-left {
     left          : 0;
 }
 
+.s-avatar {
+    width         : var(--vspace-1_75);
+    height        : var(--vspace-1_75);
+    border-radius : 100%;
+    outline       : none;
+    top           : 0;
+    left          : 0;
+}
+
 .s-testimonials__cite {
     display : block;
 }
